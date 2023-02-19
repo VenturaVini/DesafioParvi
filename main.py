@@ -20,11 +20,11 @@ lista = []
 lista1 = []
 lista2 = []
 for i in np.arange(1,11):
-    titulo = navegador.find_element(By.XPATH,f'//*[@id="mdContent"]/div[{i}]/article/header/h3/a').text;
+    titulo = navegador.find_element(By.XPATH,f'//*[@id="mdContent"]/div[{i}]/article/header/h3/a').text
     lista.append(titulo)
     data = navegador.find_element(By.XPATH,f'//*[@id="mdContent"]/div[{i}]/article/div[3]/div[1]/div/div/span/abbr').get_attribute('title')
     lista1.append(data)
-    resumo = navegador.find_element(By.XPATH,f'//*[@id="mdContent"]/div[{i}]/article/div[3]/div[2]/div/p').text;
+    resumo = navegador.find_element(By.XPATH,f'//*[@id="mdContent"]/div[{i}]/article/div[3]/div[2]/div/p').text
     lista2.append(resumo)
 
 dicionario['Titulo'] = lista
