@@ -33,6 +33,9 @@ dicionario['Resumo'] = lista2
 
 base = pd.DataFrame(dicionario)
 
+print(base)
+print(base)
+
 base.to_excel('Teste.xlsx',index=False)
 base.to_csv('Teste.csv',index=False)
 
